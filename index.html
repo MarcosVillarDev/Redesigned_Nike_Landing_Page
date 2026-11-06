@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="icon/icons8-nike-16.png">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- Navbar-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(34, 34, 34);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img id="nike-nav-brand" src="img/icons8-nike-128 (1).png" alt="nike logo"></a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#secondsection">Catalog</a>
+                </li>
+                <li class="nav-item" id="cadastrar">
+                    <a class="nav-link"
+                    id="Cadastrar"  aria-current="page" href="#thirdsection">Cadastrar-se</a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Main Content-->
+
+   
+      <!--Carousel-->
+      <main>
+        <section id="home" class="section-main-content-1">
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="img/Do it.png" class="d-block w-100" alt="imagem de homem correndo">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/Swoosh.png">
+                <img src="img/Swoosh-mobile.png" class="d-block w-100" alt="imagem de mulher correndo para mobile">
+              </picture>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        </section>
+
+      <!--Cards-->
+        <section id="secondsection" class="section-main-content-2">
+          <div class=" mt-5">
+            <div class="row gy-5 justify-content-center m-0">
+                <div class="card-group gy-5 justify-content-center">
+
+                    <div class="col-sm-4 col-md-3 mb-3">
+                      <div class="card">
+                        <img src="img/nike_shoes.jpg" class="card-img-top" alt="tenis casual">
+                        <div class="card-body">
+                        <h5 class="card-title">Nike Air Zoom Structure</h5>
+                        <p class="card-text">Casual<br>R$359,99</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="col-sm-4 col-md-3 mb-3">            
+                    <div class="card">
+                      <img src="img/run_pink_shoes_2.png" class="card-img-top" alt="tenis de corredor">
+                      <div class="card-body">
+                        <h5 class="card-title">Nike Air Zoom Victory</h5>
+                        <p class="card-text">Corrida<br>R$1899,99</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 mb-3">            
+                    <div class="card">
+                      <img src="img/chuteira_bege_2.png" class="card-img-top" alt="chuteira bege">
+                      <div class="card-body">
+                        <h5 class="card-title">Nike Mercurial Vapor 15</h5>
+                        <p class="card-text">Futebol<br>R$359,99</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="thirdsection" class="section-main-content-3">
+          
+                <form class="form-1">
+                  <h3>Criar Conta</h3>
+                  
+                  <div class="mb-3">
+                    <label for="form-item" class="form-label">Nome:</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="form-item" class="form-label">Endereço de Email:</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu endereço de email">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Comentário:</label>
+                    <textarea class="form-control" id="comentario" rows="3" placeholder="Digite seu comentário"></textarea>
+                  </div>
+
+                  <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+              </form>
+
+              <picture class="picture">
+                <source>
+                <img src="img/GOFASTER-3.png"  class="img_good img-fluid" alt="imagem de corredores nike">
+              </picture>
+          
+
+                   
+        </section>
+
+      
+        <footer class="pt-3">
+          <div class="container_footer">
+            <div id="footer-2" class="row">
+
+              <div class="col-md-4">
+                <h5 >Redes Sociais</h5>
+                <ul class="list-unstyled text-muted">
+                  <li><a href="#"><i class="bi bi-facebook me-2"></i> Facebook</a></li>
+                  <li><a href="#"><i class="bi bi-twitter me-2"></i> Twitter</a></li>
+                  <li><a href="#"><i class="bi bi-instagram me-2"></i> Instagram</a></li>
+                </ul>
+              </div>
+
+              <div class="col-md-4">
+                <h5>Links Úteis</h5>
+                <ul class="list-unstyled text-muted">
+                  <li><a href="#home">Página Inicial</a></li>
+                  <li><a href="#secondsection">Catálogo</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="copy row mt-3">
+              <div class="col-12 text-center text-muted">
+                <p>&copy; 2025 Nike. Todos os direitos reservados.</p>
+              </div>
+            </div>
+
+          </div>
+        </footer>
+
+      </main>
+
+    <script 
+    
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous">
+  
+     document.addEventListener('DOMContentLoaded', function() {
+    const refreshLink = document.getElementById('nike-nav-brand');
+    if (nikeNav) {
+      nikeNav.addEventListener('click', function(event) {
+        event.preventDefault(); // Impede a navegação padrão do link (#)
+        window.location.reload(); // Recarrega a página
+      });
+    }
+  });
+    
+  </script>
+</body>
+</html>
+            

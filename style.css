@@ -1,0 +1,383 @@
+@font-face {
+    font-family: MontiSerrati;
+    src: url("fonts/monteserrati/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: MontiSerratiItalic;
+    src: url("fonts/monteserrati/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url("fonts/Bebas_Neue/BebasNeue-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url("fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: Outfit;
+}
+
+/* --- Navbar Styles --- */
+.navbar-toggler {
+    border: none;
+}
+
+.nav-link {
+    color: gray;
+    font-family: Outfit, Arial, Helvetica, sans-serif;
+    border: 10px; /* Isso pode estar incorreto, talvez você queira border-width ou padding */
+}
+
+.nav-link:focus {
+    color: rgb(99, 98, 98);
+    border-bottom: 2px solid rgb(252, 252, 252);
+}
+
+.nav-link:hover {
+    color: rgb(194, 194, 194);
+    border-bottom: 2px solid rgb(252, 252, 252);
+}
+
+.nav-link::after {
+    color: rgb(250, 250, 250);
+}
+
+#nike-nav-brand {
+    width: 65%;
+    margin-left: 25%;
+}
+
+#Cadastrar {
+    background-color: rgb(60, 60, 60);
+    color: rgb(134, 134, 134);
+    font-weight: bold;
+    border-bottom: none;
+}
+
+#cadastrar {
+    margin-left: 10px;
+}
+
+#cadastrar :hover {
+    background-color: rgb(71, 71, 71);
+    font-weight: bolder;
+    transition: 1s;
+    color: rgb(194, 194, 194);
+}
+
+/* --- Section Main Content 2 (Cards) --- */
+.section-main-content-2 { 
+    min-height: 100px;
+    background-color: whitesmoke;
+}
+
+.card {
+    background-color: rgb(38, 38, 38);
+    border: 0px;
+}
+
+.card h5 {
+    font-weight: bolder;
+    font-family: MontiSerrati;
+    color: azure;
+}
+
+/* ATENÇÃO: Essa regra "card h5, p" sobrescreve a regra "card p" abaixo */
+.card h5,
+p {
+    color: azure;
+}
+
+.card p {
+    font-weight: lighter;
+    font-family: Outfit;
+}
+
+.card-group {
+    gap: 2%;
+    padding: 0;
+    margin: 1% 0;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.btn-primary {
+    width: 6em;
+    border: 0;
+    font-weight: bold;
+    background-color: rgb(102, 102, 102);
+}
+
+.btn-primary:hover {
+    transform: scale(1.025);
+    transition: 0.5s;
+    font-weight: bolder;
+    background-color: rgb(117, 117, 117);
+    color: rgb(233, 233, 233);
+}
+
+/* --- Section Main Content 3 (Form) --- */
+.section-main-content-3 {
+    background-color: rgb(27, 27, 27);
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 0;
+}
+
+.section-main-content-3 h3 {
+    font-weight: bolder;
+    font-family: MontiSerrati;
+    color: azure;
+    display: flex;
+    justify-content: center;
+}
+
+.form-label {
+    color: whitesmoke;
+    font-family: Outfit;
+}
+
+.form-text {
+    color: whitesmoke;
+}
+
+.form-check-label {
+    color: whitesmoke;
+}
+
+.form-1 {
+    width: 40%; /* Havia duas declarações para .form-1, mantive a última que tinha 40% */
+}
+
+form {
+    margin: 0;
+    background-color: rgb(53, 53, 53);
+    border-radius: 0; /* Isso não faz efeito se for 0%, use '0' */
+    padding: 1.6%;
+}
+
+.form-control {
+    font-family: Outfit;
+    background-color: rgb(61, 61, 61);
+    border: none;
+    color: rgb(179, 179, 179);
+}
+
+.form-control:hover {
+    font-family: Outfit;
+    background-color: rgb(59, 59, 59);
+    border: none;
+}
+
+.form-control:focus {
+    font-family: Outfit;
+    background-color: rgb(59, 59, 59);
+    border: none;
+    color: rgb(211, 211, 211);
+}
+
+.img_good {
+    border-radius: 0% 5% 5% 0%;
+    box-shadow: rgba(66, 66, 66, 0.3) 5px 5px 10px;
+}
+
+#submit {
+    margin: 0 0 2%;
+}
+
+/* --- Footer Styles --- */
+footer {
+    background-color: rgb(34, 34, 34);
+    min-height: 100px;
+}
+
+footer h5 {
+    color: rgb(179, 179, 179);
+    font-family: Outfit;
+}
+
+footer a {
+    color: rgb(105, 105, 105);
+    font-family: Outfit;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 1s;
+}
+
+footer p {
+    font-family: Outfit;
+    color: rgb(105, 105, 105);
+}
+
+.container_footer {
+    max-width: 50%;
+    margin-left: 40%;
+}
+
+#footer-2 {
+    justify-items: center;
+}
+
+.copy {
+    margin-right: 50%;
+}
+
+/* --- Media Queries --- */
+@media screen and (min-width: 1000px) and (max-width: 1200px) and (min-height: 1300px) and (max-height: 1400px) {
+    footer {
+        min-height: 750px;
+    }
+}
+
+/*Ipad Air*/
+@media screen and (min-width: 800px) and (max-width: 1000px) and (min-height: 1100px) and (max-height: 1200px) {
+    footer {
+        min-height: 600px;
+    }
+}
+/*Ipad Mini*/
+@media screen and (min-width: 750px) and (max-width: 1060px) and (min-height: 1000px) and (max-height: 1150px) {
+    footer {
+        min-height: 430px;
+    }
+}
+
+/*Mobile*/
+@media screen and (min-width: 320px) and (max-width: 360px) and (min-height: 620px) and (max-height: 660px) {
+    footer {
+        min-height: 410px;
+    }
+}
+
+@media screen and (max-width: 1230px) { /* A segunda condição "and (max-width: 1850px)" era redundante */
+    .section-main-content-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        margin: 0;
+        background-color: rgb(53, 53, 53);
+        padding: 2%;
+    }
+
+    .img_good {
+        border-radius: 0;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .form-1 {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .card {
+        margin-right: 3em;
+    }
+
+    .form-1 {
+        width: 80%;
+        padding: 5%;
+        border-radius: 2% 2% 0% 0%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card-img-top {
+        width: 15em;
+    }
+
+    .card {
+        width: min-content;
+        margin: 10%;
+    }
+
+    .card-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5% 0;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    .card-img-top {
+        width: 15em;
+    }
+
+    .card {
+        width: min-content;
+        margin: 10%;
+    }
+
+    .card-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5% 0;
+    }
+
+    .card-group {
+        background-color: whitesmoke;
+        height: 150vh;
+    }
+
+    .section-main-content-2 {
+        background-color: whitesmoke;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .nav-pills {
+        justify-content: center;
+        background-color: rgba(80, 80, 80, 0.286);
+        padding: 1%;
+    }
+
+    .nav-link {
+        color: gray;
+        font-family: Outfit, Arial, Helvetica, sans-serif;
+        border: 10px; /* Novamente, verifique esta propriedade */
+    }
+
+    .nav-link:hover {
+        color: rgb(194, 194, 194);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #nike-nav-brand {
+        width: 45%;
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #nike-nav-brand {
+        width: 35%;
+        margin-left: 25%;
+    }
+}
